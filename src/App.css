@@ -194,12 +194,14 @@ a, a:active, a:hover {
   background-color: #f8d3c5;
   height: 100%;
   margin-top: -2rem;
+  padding-bottom: 15px;
 }
 .heading {
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   padding: 1rem;
   letter-spacing: .3rem;
+  color: rgba(0, 0, 0, 0.5);
 }
 .projects-container {
   padding: 3rem;
@@ -481,5 +483,83 @@ a, a:active, a:hover {
     padding: 7px 25px;
     border-radius: 8%;
     color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Skills section */
+.skills {
+  background-color: #a3b899;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 3rem 0;
+  text-align: center;
+  margin-top: 5%;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+}
+.skill-cards {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1.2rem 1rem 1rem 1rem;
+  margin: 1.2rem;
+  width: 10rem;
+  border-radius: 4px;
+  color: #ffffff;
+}
+.skill-icon {
+  color: white;
+  font-size: 40px;
+}
+.skill-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  margin: 2em 0
+}
+.skill {
+  font-size: 1.3rem;
+  text-align: center;
+  text-shadow: 2px 3px 4px #000000;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 3rem 0;
+    text-align: center;
+    margin-top: 5%;
+    letter-spacing: 0.3rem;
+  }
+  .skill-cards {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1.2rem 1rem 1rem 1rem;
+    margin: 0.2rem;
+    width: 7em;
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  .skill-icon {
+    color: white;
+    font-size: 40px;
+  }
+  .skill-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    margin: 4em 0;
+    padding: 20px;
+  }
+  .skill {
+    padding: 0;
+    font-size: 0rem;
   }
 }
